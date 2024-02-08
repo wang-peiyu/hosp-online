@@ -167,7 +167,7 @@ public class ApiController {
 
         ScheduleQueryVo scheduleQueryVo=new ScheduleQueryVo();
         scheduleQueryVo.setHoscode(hoscode);
-        scheduleQueryVo.setHoscode(depcode);
+        scheduleQueryVo.setDepcode(depcode);
 
         Page<Schedule> pageModel=scheduleService.findPageSchedule(page,limit,scheduleQueryVo);
         return Result.ok(pageModel);
